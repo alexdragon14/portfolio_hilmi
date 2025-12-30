@@ -12,7 +12,7 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio_hilmi">
       <div
         className={`min-h-screen ${
           isDarkMode ? "bg-slate-900 text-white" : "bg-sky-200 text-gray-900"

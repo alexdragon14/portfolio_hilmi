@@ -21,7 +21,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
           <div className="flex items-center space-x-1 group cursor-pointer">
             <div>
               <img
-                src="/logo.png"
+                src="./logo.png"
                 alt="Logo"
                 className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 center"
               />
