@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+
+@layer utilities {
+  .animate-in {
+    animation-fill-mode: both;
+  }
+
+  .slide-in-from-top {
+    animation-name: slide-in-from-top;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  .pixel-font-600 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .pixel-font-400 {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+
+@keyframes slide-in-from-top {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
